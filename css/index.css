@@ -11,6 +11,7 @@ header {
     padding: 24px 40px 60px 40px;
     background: #F7F0E8;
 }
+
 a {
     text-decoration: none;
 }
@@ -29,51 +30,35 @@ nav .icon {
     padding: 8px 12px;
     cursor: pointer;
 }
-.filters {
-    background: #E0E1CE;
-    border-radius: 40px;
-    padding: 14px 16px 14px 40px;
-    margin: 0 auto 40px auto;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 1.1rem;
-    box-sizing: border-box;
+nav .icon:hover {
+    opacity: 0.7;
 }
-.filters form {
+h1 {
+    grid-column: 1 / -1;
+    text-align: left;
+    color: #364420;
+    font-size: 2rem;
+    margin: 30px 10px 30px 140px;
+}
+.main{
+    flex: 1;
+}
+
+.carousel {
+    width: 1240px;
+    height: auto;
+    margin: 10px auto 40px;
+}
+
+.carousel-inner {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 250px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    flex-wrap: wrap;
-}
-.filters label {
-    font-weight: 430;
-    margin-right: 12px;
-}
-
-.filters button {
-    background: #7A9A59;
-    color: #ffffff;
-    border: none;
-    padding: 12px 26px;
-    border-radius: 30px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background 0.2s;
-    margin-left: auto;
-}
-
-.filters button:hover {
-    background: #2F4911;
-}
-input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    accent-color: #7A9A59;
-    vertical-align: -3px;
-    cursor: pointer;
+    object-fit: cover;
 }
 
 .products {
